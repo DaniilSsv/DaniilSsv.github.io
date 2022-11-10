@@ -1,0 +1,18 @@
+
+#hobbies {
+    margin: 1rem auto 1rem;
+    text-align: center;
+}
+ul>li {
+    color: cadetblue;
+    padding: 0.2em;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.8rem;
+}
+h1,h2,h3 {
+    font-family: "Yu Gothic Medium";
+}
