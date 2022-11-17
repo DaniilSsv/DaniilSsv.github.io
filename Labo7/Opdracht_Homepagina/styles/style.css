@@ -16,3 +16,18 @@ h2 {
 h1,h2,h3 {
     font-family: "Yu Gothic Medium";
 }
+table {
+    font-family: arial, Helvetica, sans-serif;
+    border: 2px solid #36725D;
+    text-align: left;
+    border-radius: 3px;
+    padding: 10px;
+}
+th {
+    font-size: 15px;
+    font-style: oblique;
+    background: #36725D;
+}
+td {
+    border: 1px solid black;
+}
