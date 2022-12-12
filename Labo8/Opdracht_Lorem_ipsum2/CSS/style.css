@@ -1,0 +1,8 @@
+section {
+    border: 1px solid black;
+    box-sizing: content-box;
+    padding: 2px;
+    margin: 10px;
+    width: 47%;
+    display: inline-block;
+}
