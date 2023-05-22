@@ -5,14 +5,15 @@ const setup = () => {
         address : {
             zipCode: 8500,
             city: "Kortrijk"
-        }
+        },
+        age: new Date()
     }
     console.log (student1.age.toString());
-// toISOString should always return the date in UTC (Z or +00:00).
-// UTC = Coordinated Universal Time
-//UTC is bijna gelijk aan Greenwich Mean Time (GMT). GMT is een zuiver astronomische tijd. Om het door de vertraagde aardrotatie veroorzaakte verschil te compenseren, moeten er schrikkelsecondes worden gebruikt. Het verschil is nooit meer dan een seconde en voor de meeste toepassingen dan ook niet van belang.
-// the toISOString() method converts a Date object into a string, using the ISO standard.
-    console.log (student.age.toISOString());
+    console.log (student1.age.toISOString);
+    // toISOString should always return the date in UTC (Z or +00:00).
+    // UTC = Coordinated Universal Time
+    // UTC is bijna gelijk aan Greenwich Mean Time (GMT). GMT is een zuiver astronomische tijd. Om het door de vertraagde aardrotatie veroorzaakte verschil te compenseren, moeten er schrikkelsecondes worden gebruikt. Het verschil is nooit meer dan een seconde en voor de meeste toepassingen dan ook niet van belang.
+    // the toISOString() method converts a Date object into a string, using the ISO standard.
     console.log (student1.firstName);
 
 // uitbreiding
@@ -30,11 +31,11 @@ const setup = () => {
 
 
 
-    let tekst = JSON.stringify(student);
+    let tekst = JSON.stringify(student1);
     console.log (tekst);
 
-    tekst = JSON.stringify(student2);
-    console.log (tekst);
+    let tekst2 = JSON.stringify(student2);
+    console.log (tekst2);
 
     let students = [
         {
@@ -55,11 +56,11 @@ const setup = () => {
         }
     ];
 // omzetten script-object naar een JSON-object
-    tekst = JSON.stringify(students);
+    let tekst3 = JSON.stringify(students);
 
-    console.log (tekst);
+    console.log (tekst3);
 // omzetten JSON-object naar script-object
-    tekstJS = JSON.parse(tekst);
+    tekstJS = JSON.parse(tekst3);
     console.log ("JsonParse " + tekstJS[0].firstName);
 
 

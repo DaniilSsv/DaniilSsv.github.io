@@ -13,7 +13,7 @@ const bewaarBewerktePersoon = () => {
 
     let select = document.getElementById("lstPersonen");
     let selected = select.selectedIndex;
-    if(selected == -1){
+    if(selected === -1){
         let persoon = {};
         // nieuwe persoon bewaren
         vulPersoonOpBasisVanUserInterface(persoon);
@@ -52,7 +52,6 @@ const bewerkNieuwePersoon = () => {
 const vulPersoonOpBasisVanUserInterface = (persoon) => {
     persoon.voornaam = document.getElementById("txtVoornaam").value.trim();
     persoon.familienaam = document.getElementById("txtFamilienaam").value.trim();
-    //persoon.geboortedatum = new Date(document.getElementById("txtGeboorteDatum").value.trim());
     persoon.geboortedatum = document.getElementById("txtGeboorteDatum").value.trim();
     persoon.email = document.getElementById("txtEmail").value.trim();
     persoon.aantalKinderen = document.getElementById("txtAantalKinderen").value.trim();

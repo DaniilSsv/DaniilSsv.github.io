@@ -6,7 +6,8 @@ const setup = () => {
     }
 
     const img = document.createElement('img');
-    img.setAttribute("src",'images/windows.jpeg');
+    img.src='images/windows.jpeg';
+    //img.setAttribute("src",'images/windows.jpeg');
     document.querySelector("body").appendChild(img);
 }
 window.addEventListener("load", setup);
