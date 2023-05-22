@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" charset="utf-8"
+            src="scripts/code.js"></script>
+    <title>Opdracht FormVoorwaardne</title>
+ <style>
+   div {
+    margin: 10px;
+   }
+ </style>
+</head>
+<body>
+<form>
+ <div>
+  <label for="chkRoker">Is roker</label>
+  <input id="chkRoker" name="roker" type="checkbox" value="roker">
+ </div>
+ <div>
+  <label>Moedertaal </label>
+  <input id="nederlands" name="moedertaal" type="radio" value="nl">
+  <label for="nederlands">Nederlands</label>
+
+  <input id="frans" name="moedertaal" type="radio" value="fr">
+  <label for="frans">Frans</label>
+
+  <input id="engels" name="moedertaal" type="radio" value="eng">
+  <label for="engels">Engels</label>
+ </div>
+ <div>
+  <label for="favBuurland">Favoriete buurland</label>
+  <select id="favBuurland" name="buurland">
+   <option value="Nederland">Nederland</option>
+   <option value="Frankrijk">Frankrijk</option>
+   <option value="Duitsland">Duitsland</option>
+  </select>
+ </div>
+ <div>
+  <label for="bestellingOptie">Bestelling:</label>
+  <select id="bestellingOptie" multiple name="bestelling" size="5">
+   <option value="aardappelen">aardappelen</option>
+   <option value="brood">brood</option>
+   <option value="melk">melk</option>
+   <option value="chips">chips</option>
+   <option value="krant">krant</option>
+  </select>
+ </div>
+ <div>
+  <input type="button" id="btnResultaat" value="btnResultaat" />
+ </div>
+</form>
+</body>
+</html>
